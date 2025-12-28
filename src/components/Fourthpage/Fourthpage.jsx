@@ -1,11 +1,15 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Fourthpage.module.css";
-import { FaHome, FaBell, FaSave, FaSearch, FaUser } from "react-icons/fa";
+import { FaHome, FaBell, FaBookmark, FaSearch, FaUser } from "react-icons/fa";
 
 const Fourthpage = () => {
   const navigate = useNavigate();
   const handleBack = () => navigate(-1);
+
+  const handleGetStarted = () => {
+    navigate("/fifthpage");
+  };
 
   const imageInputRef = useRef(null);
   const videoInputRef = useRef(null);
@@ -43,9 +47,12 @@ const Fourthpage = () => {
   return (
     <div className={styles.parent}>
       <div className={styles.card}>
+        <div className={styles.backBtn}>
+          <button className={styles.backButton} onClick={handleBack}>
+            ❮
+          </button>
+        </div>
         <div className={styles.top}>
-          <button onClick={handleBack}>Back</button>
-
           <div className={styles.categorySection}>
             <h2>Category</h2>
             <div className={styles.categoryButtons}>
@@ -119,11 +126,14 @@ const Fourthpage = () => {
             </div>
           </div>
 
-          {/* ---------- BOTTOM ---------- */}
           <div className={styles.bottom}>
-            <FaHome className={styles.navIcon} title="Home" />
+            <FaHome
+              className={styles.navIcon}
+              title="Home"
+              onClick={handleGetStarted}
+            />
             <FaBell className={styles.navIcon} title="Bell" />
-            <FaSave className={styles.navIcon} title="Save" />
+            <FaBookmark className={styles.navIcon} title="Save" />
             <FaSearch className={styles.navIcon} title="Search" />
             <FaUser className={styles.navIcon} title="Profile" />
           </div>

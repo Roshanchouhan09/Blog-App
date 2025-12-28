@@ -16,7 +16,7 @@ const Secondpage = () => {
     <div className={styles.parent}>
       <div className={styles.card}>
         <div className={styles.top}>
-          <button onClick={handleBack}>Back</button>
+          <button onClick={handleBack}>❮</button>
           <h2>Blog</h2>
           <h3>Share your story</h3>
           <h4>with us</h4>

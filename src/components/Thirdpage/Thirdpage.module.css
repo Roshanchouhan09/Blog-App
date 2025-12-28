@@ -113,9 +113,10 @@ html, body {
 
 .toggle-password {
   position: absolute;
-   
+  position: fixed;
   right: 20px;
   top: 63.2%;
+  left:20%;
    margin-right: 420px;
   transform: translateY(-75%);
   font-size: 13px;

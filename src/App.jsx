@@ -4,6 +4,7 @@ import Secondpage from "./components/Secondpage/Secondpage.jsx";
 import Thirdpage from "./components/Thirdpage/Thirdpage.jsx";
 
 import Fourthpage from "./components/Fourthpage/Fourthpage.jsx";
+import Fifthpage from "./components/Fifthpage/Fifthpage.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/secondpage" element={<Secondpage />} />
         <Route path="/thirdpage" element={<Thirdpage />} />
         <Route path="/fourthpage" element={<Fourthpage />} />
+        <Route path="/fifthpage" element={<Fifthpage />} />
         <Route path="*" element={<div>404 - Not Found</div>} />
       </Routes>
     </BrowserRouter>

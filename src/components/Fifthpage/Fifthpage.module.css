@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent{
+  height:100%;
+  width:100%;
+  background-color: #c64848;
+  padding:10px;
+  display:flex;
+  align-self: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+  .card
+  
+  {
+  height: 600px;
+  width: 330px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #2b0e31da, #7b466a, #9f6496);
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+   
