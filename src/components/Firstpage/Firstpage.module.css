@@ -1,0 +1,99 @@
+/* Component-scoped styles for Firstpage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.parent{
+    height:100%;
+    width:100%;
+    background-color: #c64848;
+    padding:10px;
+    display:flex;
+    align-self: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card{
+  height: 600px;
+  width: 330px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #2b0e31da, #7b466a, #9f6496);
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card .top{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: Oleo Script typo;
+  color: #f0f0f0;
+  padding: 85px ;
+  margin: 80px;
+  margin-top: 80px;
+  margin-left: 50px;
+  font-style: italic;
+} 
+
+
+.card .center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f0f0;
+  padding: 15px;
+  margin-top: -140px;
+  font-style:italic;
+}
+
+
+.card .bottom{
+  padding: 15px;
+  align-items: center;
+  direction: column;
+   
+
+}
+
+.bottom h3{
+  color:#f0f0f0;
+  margin-left: 90px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 75px;
+
+}
+
+.bottom h4{
+  color:#f0f0f0;
+  margin-left: 112px;
+  font-size: 15px;
+  margin-top: -20px;
+}
+  
+ 
+
+.card .bottom button{
+  background-color: #5d3c64;
+  color: #f0f0f0;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 60px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 65px;
+  margin-left: 48px;
+  font-size: 18px;
+  transition-duration: 500ms;
+   
+   
+}

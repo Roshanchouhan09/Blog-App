@@ -1,0 +1,166 @@
+/* reset moved to index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+  .parent{
+    height:100%;
+    width:100%;
+    background-color: #c64848;
+    padding:10px;
+    display:flex;
+    align-self: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+  .card
+  
+  {
+  height: 600px;
+  width: 330px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #2b0e31da, #7b466a, #9f6496);
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+
+.card .top{
+
+  margin: 10px;
+}
+
+.top h2{
+  font-size: 22px;
+  color: #f0f0f0;
+  font-weight: 600;
+  font-style:italic
+
+}
+.top h3{
+  font-size: 22px;
+  color: #f0f0f0;
+  font-weight: 500;
+  margin-top: -10px;
+  font-style: italic;
+}
+.top h4{
+  font-size: 22px;
+  color: #f0f0f0;
+  font-weight: 400;
+  margin-top: -15px;
+  font-style: italic;
+}
+
+.center {
+  margin-top:25;
+}
+
+.center input {
+  width: 100%;
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin-bottom: 18px;
+  font-size: 14px;
+    color: #333;
+}
+
+.password-box {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  cursor: pointer;
+  color: #555;
+}
+
+.forgot-password {
+  font-size: 13px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  border: none;
+  background: #5a2f5c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.or {
+  margin: 15px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.new-user {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  border: none;
+  background: #5a2f5c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.signup-btn:hover {
+  background: #7b466a;
+}
+
+

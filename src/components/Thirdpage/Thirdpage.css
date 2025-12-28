@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent{
+  height:100%;
+  width:100%;
+  background-color: #c64848;
+  padding:10px;
+  display:flex;
+  align-self: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+  .card
+  
+  {
+  height: 600px;
+  width: 330px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #2b0e31da, #7b466a, #9f6496);
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .card .top{
+
+  margin: 10px;
+}
+.top button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color:transparent;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+.top h2{
+  font-size: 25px;
+  color: #f0f0f0;
+  font-weight: 650;
+  font-style: italic;
+  margin-top: 30px;
+  margin-left: 125px;
+
+}
+.top h3{
+  font-size: 22px;
+  color: #f0f0f0;
+  font-weight: 650;
+  margin-top: 10px;
+  margin-left: 70px;
+  font-style: italic;
+}
+.top h4{
+  font-size: 22px;
+  color: #f0f0f0;
+  font-weight: 650;
+  margin-top: 10px;
+  margin-left: 110px;
+  font-style: italic;
+}
+
+.profile-pic-section {
+  width: 90px;
+  height: 90px;
+  background: #f0c6f0;
+  border-radius: 50%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 40px;
+}
