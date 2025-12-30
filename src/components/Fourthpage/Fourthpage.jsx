@@ -1,7 +1,14 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Fourthpage.module.css";
-import { FaHome, FaBell, FaBookmark, FaSearch, FaUser } from "react-icons/fa";
+import {
+  FaHome,
+  FaBell,
+  FaBookmark,
+  FaSearch,
+  FaUser,
+  FaArrowLeft,
+} from "react-icons/fa";
 
 const Fourthpage = () => {
   const navigate = useNavigate();
@@ -49,7 +56,7 @@ const Fourthpage = () => {
       <div className={styles.card}>
         <div className={styles.backBtn}>
           <button className={styles.backButton} onClick={handleBack}>
-            ❮
+            <FaArrowLeft />
           </button>
         </div>
         <div className={styles.top}>

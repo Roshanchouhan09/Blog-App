@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./Thirdpage.module.css";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Thirdpage = () => {
   const navigate = useNavigate();
@@ -16,7 +17,10 @@ const Thirdpage = () => {
     <div className={styles.parent}>
       <div className={styles.card}>
         <div className={styles.top}>
-          <button onClick={handleBack}>❮</button>
+          <button onClick={handleBack}>
+            {" "}
+            <FaArrowLeft />{" "}
+          </button>
           <h2>Blog</h2>
           <h3>Share your story</h3>
           <h4>with us</h4>

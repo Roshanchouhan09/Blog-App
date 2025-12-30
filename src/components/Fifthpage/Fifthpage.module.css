@@ -29,6 +29,46 @@ html, body {
   background: linear-gradient(135deg, #2b0e31da, #7b466a, #9f6496);
   border-radius: 18px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+  } 
 
-   
+  .feedContainer {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+} 
+
+.bottomm {
+  position: absolute;
+  bottom: 93px;
+  left: 12%;
+  transform: translateX(-50%);
+  width: 330px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navIcon {
+  font-size: 20px;
+  color: #5b3b6f;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.backBtn {
+   position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color:transparent;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+  
+ 

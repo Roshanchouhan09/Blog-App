@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Secondpage.module.css";
 import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Secondpage = () => {
   const navigate = useNavigate();
@@ -16,7 +17,9 @@ const Secondpage = () => {
     <div className={styles.parent}>
       <div className={styles.card}>
         <div className={styles.top}>
-          <button onClick={handleBack}>❮</button>
+          <button onClick={handleBack}>
+            <FaArrowLeft />
+          </button>
           <h2>Blog</h2>
           <h3>Share your story</h3>
           <h4>with us</h4>
