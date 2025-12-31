@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Fifthpage.module.css";
+import { useNavigate } from "react-router-dom";
 
 import {
   FaHome,
@@ -39,6 +40,12 @@ const Fifthpage = () => {
   const [posts, setPosts] = useState(initialPosts);
   const [newPost, setNewPost] = useState("");
 
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/sixthpage");
+  };
+
   const handleLike = (id) => {
     setPosts(
       posts.map((post) =>
@@ -74,7 +81,6 @@ const Fifthpage = () => {
     <div className={styles.parent}>
       <div className={styles.card}>
         <div className={styles.feedContainer}>
-          {/* Header */}
           <div className={styles.header}>
             <button
               className={styles.backBtn}
@@ -90,7 +96,6 @@ const Fifthpage = () => {
             </div>
           </div>
 
-          {/* Write / Search Box */}
           <div className={styles.searchBox}>
             <div className={styles.writeBox}>
               <FaUser className={styles.userIcon} />
@@ -106,10 +111,8 @@ const Fifthpage = () => {
             </div>
           </div>
 
-          {/* Posts */}
           {posts.map((post) => (
             <div className={styles.postCard} key={post.id}>
-              {/* 🔹 TOP PART */}
               <div className={styles.top}>
                 <h2>{post.title}</h2>
 
@@ -122,12 +125,10 @@ const Fifthpage = () => {
                 </div>
               </div>
 
-              {/* 🔹 CENTER PART */}
               <div className={styles.center}>
                 <p className={styles.content}>{post.content}</p>
               </div>
 
-              {/* 🔹 BOTTOM PART */}
               <div className={styles.bottom}>
                 <button className={styles.readBtn}>Read more</button>
 
@@ -143,9 +144,8 @@ const Fifthpage = () => {
             </div>
           ))}
 
-          {/* Floating Add Button */}
           <button className={styles.fab} onClick={handleAddPost}>
-            <FaPlus />
+            <FaPlus onClick={handleGetStarted} />
           </button>
 
           <div className={styles.bottomm}>
