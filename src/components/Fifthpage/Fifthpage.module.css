@@ -69,6 +69,33 @@ html, body {
   margin-top: 90px;
   cursor: pointer;
 }
+.header h3{
+  margin-left: 5px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.icons{
+  margin-left: 250px;
+  margin-top: -22px;
+  gap: 5px;
+}
+
+.search{
+  width: 98%;
+  padding: 6px;
+background: #fff;
+color: #5b3b6f;
+margin-top: 10px;
+font-weight: 600;
+
+}
+
+.searchIcon{
+  color: #333;
+  margin-left: 270px;
+  margin-top: -10px;
+}
 
   
  

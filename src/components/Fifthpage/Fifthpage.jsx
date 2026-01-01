@@ -27,7 +27,6 @@ const initialPosts = [
   },
 ];
 
-// Time ago logic
 const timeAgo = (time) => {
   const diff = Math.floor((Date.now() - time) / 1000);
   if (diff < 60) return "Just now";
@@ -98,9 +97,10 @@ const Fifthpage = () => {
 
           <div className={styles.searchBox}>
             <div className={styles.writeBox}>
-              <FaUser className={styles.userIcon} />
+              {/* <FaUser className={styles.userIcon} /> */}
 
               <input
+                className={styles.search}
                 type="text"
                 placeholder="search"
                 value={newPost}
